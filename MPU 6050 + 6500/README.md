@@ -1,7 +1,7 @@
 
 
 ![3886-07](https://github.com/user-attachments/assets/c4c7ee42-3861-4f02-9e3d-b9bcecd4d064)
-# MPU6050 Driver (CMSIS / STM32F4 Blackpill)
+# MPU 6050 Driver (CMSIS / STM32F4 Blackpill)
 
 This project contains a **bare-metal CMSIS-based driver** for the **MPU6050 (3-axis accelerometer + 3-axis gyroscope)**, written for STM32F4 **Blackpill boards** (STM32F401/STM32F411).
 
