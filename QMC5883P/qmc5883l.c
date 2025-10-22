@@ -8,7 +8,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stm32f4xx.h>
-#include <qmcr5883l.h>
+#include <qmc5883P.h>
 
 
 float mag_x, mag_y, mag_z = 0;
@@ -191,6 +191,7 @@ void qmc_init(void) {
 		printf("Invalid sensor ID\r\n");
 	}
 }
+
 
 
 
