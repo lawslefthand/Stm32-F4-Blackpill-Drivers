@@ -3,7 +3,7 @@
 
 # QMC5883P I2C Driver for STM32F4XX Blackpill Boards
 
-A simple, **register-level (LL) I2C driver** for the QMC5883L magnetometer sensor, written for STM32F4 series microcontrollers (like the "Black Pill").
+A simple, **register-level (LL) I2C driver** for the QMC5883L magnetometer sensor, written for STM32F4 series black pill boards.
 
 This driver **does not use the STM32 HAL**, relying directly on register access for peripheral configuration and I2C communication.
 
