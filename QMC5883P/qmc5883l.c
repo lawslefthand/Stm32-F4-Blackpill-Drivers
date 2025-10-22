@@ -1,5 +1,5 @@
 /*
- * qmc5883l.c
+ * qmc5883p.c
  *
  *  Created on: Oct 22, 2025
  *      Author: danba
@@ -8,7 +8,7 @@
 #include <math.h>
 #include <stdio.h>
 #include <stm32f4xx.h>
-#include <qmc5883P.h>
+#include <qmc5883p.h>
 
 
 float mag_x, mag_y, mag_z = 0;
