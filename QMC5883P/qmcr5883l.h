@@ -5,8 +5,8 @@
  *      Author: danba
  */
 
-#ifndef INC_QMC5883L_H_
-#define INC_QMC5883L_H_
+#ifndef INC_QMC5883P_H_
+#define INC_QMC5883P_H_
 
 
 
@@ -58,4 +58,5 @@ void qmc_mag_read(void);
 void qmc_init(void);
 
 
-#endif /* INC_QMC5883L_H_ */
+#endif /* INC_QMC5883[_H_ */
+
