@@ -47,70 +47,9 @@ This driver is hard-coded with the following configuration:
 
 1. **Add Files:** Add `qmc5883l.c` to your project's source files.
 2. **Create Header:** Create `qmc5883P.h` for the sensor address and function prototypes.
+3. **Example:** Example in main.c with uart2 init using CubeMX.
 
-### Sample `qmc5883P.h`
 
-```c
-#ifndef QMC5883P_H_
-#define QMC5883P_H_
-
-#include "stm32f4xx.h"
-#include <stdint.h>
-
-/* QMC5883L Default I2C Address (7-bit) */
-#define QMC_ADDR 0x0D
-
-// --- Public Function Prototypes ---
-
-void qmc_rcc_config(void);
-void qmc_gpio_config(void);
-void qmc_i2c_config(void);
-void qmc_init(void);
-void qmc_mag_read(void);
-
-// --- Low-Level I2C Functions ---
-void qmc_i2c_write(uint8_t addr, uint8_t value);
-uint8_t qmc_i2c_read(uint8_t reg_addr);
-
-#endif /* QMC5883P_H_ */
-```
-
-### Sample `main.c`
-
-```c
-#include "stm32f4xx.h"
-#include "qmc5883P.h"
-
-// Simple blocking delay
-void crude_delay(volatile uint32_t count) {
-    while (count--);
-}
-
-int main(void) {
-    // 1. Configure System Clocks
-    //    (HSE, PLL, SYSCLK 84/100MHz, PCLK1 42MHz)
-
-    // 2. Configure UART for printf
-    //    (syscalls.c retarget printf to USART2)
-
-    printf("System Init Complete.\r\n");
-
-    // 3. Initialize QMC5883L driver
-    qmc_rcc_config();
-    qmc_gpio_config();
-    qmc_i2c_config();
-
-    // 4. Initialize sensor
-    qmc_init();
-
-    while (1) {
-        // 5. Read magnetometer data and print heading
-        qmc_mag_read();
-
-        // Delay (~100-200ms for 200Hz sensor)
-        crude_delay(1000000);
-    }
-}
 ```
 
 ---
