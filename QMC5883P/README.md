@@ -61,7 +61,7 @@ This driver is hard-coded with the following configuration:
 
 * `stm32f4xx.h` – CMSIS/LL header for STM32F4 series
 * `stdio.h` – For `printf` (requires UART retargeting)
-* `math.h` – For `atan2` in heading calculation (`-lm` linker flag may be required)
+* `math.h` – For `atan2` in heading calculation 
 
 ---
 
