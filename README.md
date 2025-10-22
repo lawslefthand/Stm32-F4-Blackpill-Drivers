@@ -40,7 +40,7 @@ Additionally, example projects are provided in the `examples/` directory to help
 
 ## Getting Started
 
-1:Simply copy the .c and .h files for the drivers you want to use in you src and inc folders in the Stm32CUBEIDE project directory.
+Simply copy the .c and .h files for the drivers you want to use in you src and inc folders in the Stm32CUBEIDE project directory.
 
 ---
 
