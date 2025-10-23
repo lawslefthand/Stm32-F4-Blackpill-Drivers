@@ -18,7 +18,7 @@ Currently, driver comes with a single font, but custom or new fonts can be added
 * **SH1106 Initialization:** Configures the SH1106 for displaying data.
 * **I2C Scanner** Tries different addresses from 0 to 126 sequentially and if any address matches, outputs it using printf(Serial Wire viewer)
 * **Debug Output:** Uses `printf` to debug initialization and i2c address if i2c scanner is executed.
-* **Graphics:** This driver is able to draw ractangles, inverted rectangles, horizontal & vertical lines at a particular `x` and `y` values.
+* **Graphics:** This driver is able to draw rectangles, inverted rectangles, horizontal & vertical lines at a particular `x` and `y` values.
 * **Bitmaps:** Can draw bitmaps using raw byte data.
 
 ---
