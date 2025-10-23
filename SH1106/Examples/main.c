@@ -1,3 +1,7 @@
+// This is a sample code for testing SH1106 driver functions
+//Ouput of this code is attached below main.c
+
+
 #include "OLED.h"
 #include "bitmap.h"
 
