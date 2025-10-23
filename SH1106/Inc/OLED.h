@@ -27,7 +27,7 @@
 void delay_ms(uint32_t ms);
 void I2C1_init(void);
 void i2cWriteByte(uint8_t addr, uint8_t control, uint8_t value);
-void Ii2cBurstWrite(char saddr, int n, char* data);
+void i2cBurstWrite(char saddr, int n, char* data);
 void i2c_scanner(void);
 void cmdwrite(uint8_t cmd);
 void datawrite(uint8_t data);
