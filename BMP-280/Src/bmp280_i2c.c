@@ -278,23 +278,7 @@ void bmp_i2c_setup(void) {
     bmp_i2c_write(0xF5, 0x0C);
 }
 
-double altitude(void) {
-    double temp_rature = 0;
-    double pres_sure = 0;
-    const double P0 = 101325.0;      // Sea-level standard pressure in Pa
-    const double T0 = 288.15;       // Sea-level standard temperature in K
-    const double L = 0.0065;        // Temperature lapse rate in K/m
-    const double R = 8.3144598;     // Universal gas constant in J/(mol·K)
-    const double g = 9.80665;       // Gravity in m/s^2
-    const double M = 0.0289644;     // Molar mass of air in kg/mol
 
-    temp_rature = temperature(0);
-    pres_sure = pressure();
-
-    double altitude = (temp_rature / L) * (1 - pow((pres_sure / P0), (R * L) / (g * M)));
-    printf("Altitude: %.2f meters\n", altitude);
-    return altitude;
-}
 
 void delay_ms(uint32_t ms) {
 	SysTick->LOAD = (SystemCoreClock / 8000) * ms - 1;
@@ -303,4 +287,5 @@ void delay_ms(uint32_t ms) {
 	while ((SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) == 0);
 	SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
 }
+
 
