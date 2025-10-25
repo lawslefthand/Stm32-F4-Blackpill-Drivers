@@ -15,7 +15,7 @@ void bmp_i2c_write(uint8_t addr, uint8_t value);
 uint8_t bmp_i2c_read(uint8_t tx_addr);
 double temperature(int x);
 double pressure(void);
-double altitude(void);
+
 void delay_1s(void);
 void trim_read(void);
 void bmp_i2c_setup(void);
@@ -23,3 +23,4 @@ void delay_ms(uint32_t ms);
 
 
 #endif /* SRC_BMP280_I2C_H_ */
+
