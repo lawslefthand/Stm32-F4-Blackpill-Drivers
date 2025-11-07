@@ -149,7 +149,7 @@ void qmc_mag_read(void) {
 
 	//printf("mag: X=%.2f , Y=%.2f , Z=%.2f \r\n", mag_x, mag_y, mag_z);
 
-	angle = atan2(mag_y, mag_x);
+	angle = atan2(-mag_y, mag_x);
 
 	 angle = angle * (180.0f / 3.14159f);
 
@@ -191,6 +191,7 @@ void qmc_init(void) {
 		printf("Invalid sensor ID\r\n");
 	}
 }
+
 
 
 
